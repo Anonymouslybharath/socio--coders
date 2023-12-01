@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Project Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS0nzo4T0cYB1Sjpn5z1aQNd-YeB-XfDcvNw&usqp=CAU');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 200px auto;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8); /* Add background color to enhance readability */
+      padding: 100px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Project Features</h1>
+    <div class="button-container">
+      <a href="#" class="button">In-Built Messenger Integration</a>
+      <a href="{{ url_for('messenger_integration') }}" class="button" target="_blank">AI Virtual Assistant Development</a>
+      <a href="https://gpt.h2o.ai/" class="button">PDF Chat LLM Integration</a>
+      <a href="https://codellama.h2o.ai/" class="button">Documentation Creation Automation</a>
+    </div>
+  </div>
+</body>
+</html>
